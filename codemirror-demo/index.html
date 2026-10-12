@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeMirror 6 Demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:opsz,wght@8..60,500;8..60,650&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <header class="site-header">
+        <p class="brand">CodeMirror 6</p>
+        <h1>Editor playground</h1>
+        <p class="lede">
+          A minimal local demo with line numbers, One Dark theme, and language
+          modes for JavaScript and Python.
+        </p>
+      </header>
+
+      <div class="toolbar" role="toolbar" aria-label="Editor controls">
+        <label class="field">
+          <span>Language</span>
+          <select id="language" aria-label="Syntax language">
+            <option value="javascript" selected>JavaScript</option>
+            <option value="python">Python</option>
+          </select>
+        </label>
+        <button type="button" id="reset" class="ghost">Reset sample</button>
+      </div>
+
+      <div id="editor" class="editor-shell" aria-label="Code editor"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
